@@ -1,0 +1,599 @@
+@import 'shop.html';
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.section-p1{
+    padding: 40px 80px;
+}
+.section-m1{
+    padding: 40px 0;
+}
+.logo{
+    height: 50px;
+}
+/*header start*/
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left:60px;
+    padding-right: 30px;
+    background: rgba(255, 255, 255,1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0,.06);
+    position:sticky;
+    z-index: 999;
+    top: 0;
+    left:0;
+}
+#navbar ion-icon{
+    font-size: 32px;
+    margin-top: 7px;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: capitalize;
+    list-style: none;
+}
+#navbar li{
+    padding: 0 15px;
+}
+#navbar li a{
+    font-size: 1.2em;
+    color: black;
+    text-decoration: none;
+    font-family: cursive;
+    transition: .2s easy;
+}
+#navbar li a:hover{
+    color: rgb(20, 220, 47);
+}
+.marquee{
+    font-size: 13px;
+    font-weight:bolder;
+    letter-spacing: 1px;
+    font-family: cursive;
+    color: #000000;
+    background-color: transparent;
+    text-transform: uppercase;
+    padding-top: 20px;
+}
+.marquee span{
+    color: crimson;
+}
+#hero{
+    background-image: url(../img/marcin-kempa-cjUxiJoVzc0-unsplash.jpg);
+    width: 100%;
+    height: 90vh;
+    background-size: cover;
+    background-position: top 25% right 0;
+    padding: 0 80px;
+    font-size: 2.5em;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgb(3, 3, 3);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+#hero h4{
+    padding: 1px 20px;
+    font-size: .7em;
+    color: #fff;
+}
+#hero h1{
+    color: darkgreen;
+}
+#hero h2{
+    color: #fff;
+}
+#hero p{
+    font-size: .7em;
+    padding-top: 12px;
+    color: #fff;
+}
+#hero button{
+    background-image: url(../img/button.png);
+    background-color: transparent;
+    color: darkgreen;
+    text-shadow: 1.05px 0 #ffffff44;
+    border: 0;
+    padding: 14px 100px 14px 65px;
+    background-repeat: no-repeat;
+    font-weight: 700;
+    font-size: 15px;
+    cursor: pointer;
+}
+#features .fe-box{
+    width: 160px;
+    text-align: center;
+    padding: 25px 15px;
+    box-shadow: 20px 20px 34px rgba(0, 0, 0,.03);
+    border: 1px solid#cce7d0;
+    border-radius: 4px;
+    margin: 15px 0;
+}
+#features{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+}
+#features .fe-box:hover{
+    box-shadow: 10px 10px 54px rgba(70,62,221,0.1);
+}
+#features .fe-box img{
+    width: 100%;
+    margin-bottom: 10px;
+}
+#features .fe-box h6{
+    display: inline-block;
+    padding: 9px 8px 6px 8px;
+    line-height: 1;
+    border-radius: 4px;
+    color: #088178;
+    background-color: #fddde4;
+}
+#features .fe-box:nth-child(2) h6{
+    background-color: #d3f5d4;
+}
+#features .fe-box:nth-child(3) h6{
+    background-color: #e3d0f5;
+}
+#features .fe-box:nth-child(4) h6{
+    background-color: #e4f195;
+}
+#features .fe-box:nth-child(5) h6{
+    background-color: #a7e6f1;
+}
+#features .fe-box:nth-child(6) h6{
+    background-color: #f5bb95;
+}
+#product1{
+    text-align: center;
+}
+#product1 h2{
+    font-size: 2.5em;
+}
+#product1 p{
+    font-size: 1.5em;
+}
+#product1 .pro-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+    flex-wrap: wrap;
+    gap: 0.02px;
+}
+#product1 .pro{
+    width: 40vh;
+    min-width:50px;
+    padding: 10px 12px;
+    border: 1px solid #cce7d0;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0,.03);
+    margin: 15px 0;
+    transition: .3s ease;
+    position: relative;
+}
+#product1 .pro:hover{
+    box-shadow: 20px 20px 30px rgba(0, 0, 0,.07);
+}
+#product1 .pro img{
+    width: 100%;
+    border-radius: 20px;
+}
+#product1 .pro .des{
+    text-align: start;
+    padding: 10px 0;
+}
+#product1 .pro  ion-icon{
+    font-size: 16px;
+    --ionicon-stroke-width:50px;   
+}
+#product1 .pro a {
+    width: 40px;
+    height: 40px;
+    color: #088178;
+    line-height: 40px;
+    border-radius: 50px;
+    border-color: #e8f6ea;
+    font-weight: 500;
+    border: 1px solid #cce7d0;
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+}
+#product1 .pro a:hover{
+    color: #fff;
+    background: #088178;
+}
+#product1 .pro .des span{
+    color: #606063;
+}
+#product1 .pro .des h5{
+    padding-top: 7px;
+}
+#product1 .pro .des ion-icon{
+    color: rgb(243, 181, 25);
+}
+#product1 .pro .des h4{
+    padding-top: 7px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #088178;
+}
+
+
+#banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url("../img/b2.jpg");
+    min-width: 100%;
+    height: 40vh;
+    background-position: center;
+    background-size: cover;
+}
+#banner h4{
+    font-size: 1.5em;
+    color: #fff;
+}
+#banner h2{
+    font-size: 2.5em;
+    color: #fff;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+#banner h2 span{
+    color: #f80101;
+}
+#banner button{
+    font-size: 12px;
+    font-weight: 600;
+    padding-top: 150px;
+    padding: 15px 30px;
+    color: #000;
+    background-color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: .2s;
+}
+#banner button:hover{
+    background-color: rgb(24, 59, 28);
+    color: #fff;
+}
+#sm-banner{
+    display: flex;    
+    justify-content: space-between;
+}
+#sm-banner .banner-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+    background-image: url("../img/b17.jpg");
+    min-width: 580px;
+    height: 50vh;
+    background-position: center;
+    background-size: cover;
+    padding: 30px;
+}
+#sm-banner .banner-box2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+    background-image: url("../img/b10.jpg");
+    min-width: 580px;
+    height: 50vh;
+    background-position: center;
+    background-size: cover;
+    padding: 30px;
+}
+#sm-banner h4{
+    color: #fff;
+    font-size: 25px;
+    font-family: cursive;
+    font-style: italic;
+}
+#sm-banner h2{
+    color: #fff;
+    font-size: 36px;
+    font-family: cursive;
+    font-style: italic;
+}
+#sm-banner span{
+    color: #fff;
+    font-size: 22px;
+    font-family: cursive;
+    font-style: italic;
+    padding-bottom: 2em;
+}
+#sm-banner button{
+    font-size: 12px;
+    font-weight: 600;
+    padding: 11px 18px;
+    color: #fff;
+    background-color: transparent;
+    cursor: pointer;
+    border: 1px solid #fff;
+    outline: none;
+    transition: .2s;
+}
+#sm-banner button:hover{
+    background-color: #088178;
+    border: 1px solid #088178;
+}
+#banner3{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 80px;
+}
+#banner3 .banner-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+    background-image: url("../img/b7.jpg");
+    min-width: 30%;
+    height: 30vh;
+    background-position: center;
+    background-size: cover;
+    padding: 20px;
+    margin-bottom: 40px;
+}
+#banner3 .banner-box2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+    background-image: url("../img/b4.jpg");
+    min-width: 30%;
+    height: 30vh;
+    background-position: center;
+    background-size: cover;
+    padding: 20px;
+    margin-bottom: 40px;
+}
+#banner3 .banner-box3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+    background-image: url("../img/b18.jpg");
+    min-width: 30%;
+    height: 30vh;
+    background-position: center;
+    background-size: cover;
+    padding: 20px;
+    margin-bottom: 40px;
+}
+
+#banner3 h2{
+    color:#fff;
+    font-weight: 900;
+    font-size: 22px;
+}
+#banner3 h4{
+    color:#fff;
+    font-weight: 800;
+    font-size: 15px;
+}
+#newsletter{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-image: url("../img/b14.png");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 20vh;
+    background-position: 20% 30%;
+    background-color: #000;
+    background-size: cover;
+    padding: 0 80px;
+}
+#newsletter .newstext h4{
+    font-size: 1.5em;
+    color:#fff;
+}
+#newsletter .newstext p{
+    font-size: 1.5em;
+    color:#fff;
+}
+#newsletter .newstext span{
+    font-size: 1em;
+    color:#f5f107;
+}
+#newsletter input{
+    height: 3.125rem;
+    font-weight: 600;
+    width: 80%;
+    padding: 0 1em;
+    border: 1px solid #fff;
+    outline: 1px ;
+    background: transparent;
+    font-size: 1em;
+    font-style: italic;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+#newsletter button{
+    font-size: 12px;
+    font-weight: 600;
+    padding: 0 18px;
+    color: #fff;
+    background-color: #088178;
+    border: 1px solid #088178;
+    white-space: nowrap;
+    cursor: pointer;
+    outline: none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    transition: .3s easy;
+}
+#newsletter input:hover{
+    text-transform: #0c0c0c;
+    background-color: #f5f7f6;
+    border: 1px solid #f7f7f7;
+    white-space: nowrap;
+}
+#newsletter .form{
+    display: flex;
+    width: 40%;
+}
+#btm-logo .logo{
+    height: 55px;
+}
+#btm-logo{
+    padding-top: 10px;
+    padding-left: 66px;
+}
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+footer .col{
+    display: flex;
+    width: 40vh;
+    min-width:50px;
+
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+footer h4{
+    font-size: 14px;
+    padding-bottom: 20px;
+}
+footer p{
+    font-size: 14px;
+    margin: 0 0 8px 0;
+}
+footer a{
+    font-size: 13px;
+    text-decoration: none;
+    color: #222;
+    margin-bottom: 10px;
+}
+footer a:hover{
+    color: crimson;
+}
+footer .follow{
+    margin-top: 20px;
+}
+footer .follow .icon ion-icon{
+    font-size: 16px;
+}
+footer .follow .icon .facebook{
+    color:#3a06f8;
+}
+footer .follow .icon .twitter{
+    color:#06d4f8;
+}
+footer .follow .icon .instagram{
+    color:#f806d0;
+}
+footer .follow .icon .youtube{
+    color:#f80606;
+}
+footer .install .row img{
+    border: 1px solid #088178;
+    border-radius: 10px;
+}
+footer .install img{
+    margin: 10px 0 15px 0;
+}
+.copyright{
+    width:100%;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* shop */
+#shop-hero{
+    background-image: url( ../img/b1.jpg);
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#shop-hero h4{
+    font-size: 3em;
+    color: #fff;
+    font-family: cursive;    
+}
+#shop-hero p{
+    font-size: 1em;
+    color: #fff;
+    font-family: cursive;    
+}
+#pagination{
+    text-align: center;
+    padding-bottom: 50px;
+}
+#pagination a{
+    text-decoration: none;
+    background-color:#088178;
+    padding: 15px 20px;
+    border-radius: 4px;
+    color: #fff;
+    font-weight: 600;
+}
+#pagination a:hover{
+    text-decoration: none;
+    background-color:#fff;
+    color: #000000;
+}
+/* sproduct */
+#prodetails .single-img{
+    width: 40%;
+    margin-right: 50px;
+}
+small-img{
+    display: flex;
+    justify-content: space-between;
+}
+img-col{
+    flex-basis: 24%;
+    cursor: pointer;
+}
+   
+
+@media (max-width:1000px)
+{
+    #features .fe-box {
+        width:108px;
+    }
+
+    #product1 .pro{
+        width: 25vh;
+        min-width: 20px;
+    }
+}
